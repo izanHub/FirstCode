@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri, sans-serif;
+    font-weight: 300;
+  }
+  
+  .div-horizontal {
+    width: 100%;
+    text-align: center;
+  }
+
+  .first {
+    height: 100vh;
+    background-image: url('img/header.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-size: cover;
+  }
+  .parrafo {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 1%;
+    padding-bottom: 3%;
+  }
+
+  .first h1 {
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .first h2 {
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+  }
+
+  .second {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .feedback-container h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .imagen {
+    width: 3000px;
+  }
+
+  .image-container {
+    position: relative;
+    width: calc(33.33% - 10px);
+    margin-right: 10px; 
+    height: 300px; 
+    overflow: hidden;
+    
+  }
+  
+  .image-container:last-child {
+    margin-right: 0; 
+  }
+  .abajo {
+    padding-top: 25%;
+  }
+  
+  .image-container img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+  }
+
+  .feedback-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(12, 122, 122, 0.658) ;
+    color: white;
+    font-family: Calibri;
+    height: 100px;
+  }
+  
+  .feedback-container h3 {
+    margin: 0;
+    font-size: 30px;
+  }
+  
+  .feedback-container h2 {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .feedback-container .feedback-text {
+    text-align: center;
+  }
+  .feedback-text p {
+    font-size: 25px;
+    padding-top: 1,5%;
+  }
+  
+ 
+
+  .split-container {
+    display: flex;
+    width: 100%;
+  }
+
+  .text-side,
+  .image-side {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .image-side img {
+    width: 80%;
+    height: auto;
+  }
+
+  .text-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+    padding: 2rem; 
+  }
+
+  .text-side h3 {
+    font-size: 2.3rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .text-side p {
+    font-size: 1.6rem;
+    max-width: 90%; 
+    margin-bottom: 1rem;
+  }
+
+  .text-side ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .text-side ul li {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+  }
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.473);
+    padding: 2rem;
+  }
+
+  .column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .footer h4 {
+    font-size: 1.5rem;
+    color: rgb(0, 0, 0);
+    margin-bottom: 0.5rem;
+  }
+
+  .footer ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .footer ul li {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer p {
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+  }
+  .black-footer {
+    background-color: black;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .black-footer p {
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+  }
+
+  @media (max-width: 600px) {
+    .first h1 {
+      font-size: 2rem;
+    }
+  
+    .first h2 {
+      font-size: 1.2rem;
+    }
+  
+    .imagen {
+      width: 100%;
+    }
+  
+    .image-container {
+      width: calc(50% - 10px);
+      margin-bottom: 10px;
+    }
+  
+    .split-container {
+      flex-direction: column;
+    }
+  
+    .text-side,
+    .image-side {
+      width: 100%;
+    }
+  
+    .image-side img {
+      width: 100%;
+    }
+  
+    .text-side {
+      padding: 1rem;
+    }
+  
+    .text-side h3 {
+      font-size: 1.8rem;
+    }
+  
+    .text-side p,
+    .text-side ul li {
+      font-size: 1.2rem;
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  
+    .column {
+      padding: 1rem 0;
+    }
+  
+    .footer h4 {
+      font-size: 1.2rem;
+    }
+  
+    .footer ul li,
+    .footer p {
+      font-size: 0.8rem;
+    }
+  }
