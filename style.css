@@ -116,8 +116,6 @@
     font-size: 25px;
     padding-top: 1,5%;
   }
-  
- 
 
   .split-container {
     display: flex;
@@ -132,6 +130,7 @@
   .image-map {
     width: 600; 
     height: 450;
+    margin-left: 5%;
   }
 
   .image-side img {
